@@ -1,7 +1,7 @@
-import {
-  PoolData_poolSnapshots as PoolDataPoolSnapshots,
-  PoolData_poolData as PoolDataPoolData
-} from 'src/@types/subgraph/PoolData'
+// import {
+//   PoolData_poolSnapshots as PoolDataPoolSnapshots,
+//   PoolData_poolData as PoolDataPoolData
+// } from 'src/@types/subgraph/PoolData'
 
 export interface PoolInfo {
   liquidityProviderSwapFee: string
@@ -22,11 +22,11 @@ export interface PoolInfoUser {
 }
 
 export interface PoolProviderValue {
-  poolData: PoolDataPoolData
+  //  poolData: PoolDataPoolData
   poolInfo: PoolInfo
   poolInfoOwner: PoolInfoUser
   poolInfoUser: PoolInfoUser
-  poolSnapshots: PoolDataPoolSnapshots[]
+  // poolSnapshots: PoolDataPoolSnapshots[]
   hasUserAddedLiquidity: boolean
   refreshInterval: number
   fetchAllData: () => void
